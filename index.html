@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quick Question</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff5f8;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    button {
+      font-size: 20px;
+      padding: 12px 25px;
+      margin: 15px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .yes {
+      background-color: #ff4d6d;
+      color: white;
+    }
+
+    .no {
+    <button class="no" onclick="nope()" id="noBtn">No</button>
+}
+  </style>
+</head>
+<body>
+
+  <h1>Will you click yes? 💖</h1>
+
+  <button class="yes" onclick="showGif()">Yes</button>
+  <button class="no" onclick="nope()">No</button>
+
+  <script>
+    function showGif() {
+      document.body.innerHTML = `
+        <h1>YAY!!! 🎉</h1>
+        <img src="https://media.giphy.com/media/111ebonMs90YLu/giphy.gif">
+      `;
+    }
+
+    function nope() {
+     function nope() {
+  const btn = document.getElementById("noBtn");
+  btn.style.position = "absolute";
+  btn.style.left = Math.random() * 80 + "%";
+  btn.style.top = Math.random() * 80 + "%";
+}
+
+    }
+  </script>
+
+</body>
+</html>
