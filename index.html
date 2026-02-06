@@ -8,6 +8,8 @@
       background-color: #fff5f8;
       text-align: center;
       padding-top: 100px;
+      height: 100vh;
+      overflow: hidden;
     }
 
     button {
@@ -25,8 +27,9 @@
     }
 
     .no {
-    <button class="no" onclick="nope()" id="noBtn">No</button>
-}
+      background-color: #ccc;
+      position: relative;
+    }
   </style>
 </head>
 <body>
@@ -34,24 +37,21 @@
   <h1>Will you click yes? 💖</h1>
 
   <button class="yes" onclick="showGif()">Yes</button>
-  <button class="no" onclick="nope()">No</button>
+  <button class="no" onclick="nope()" id="noBtn">No</button>
 
   <script>
     function showGif() {
       document.body.innerHTML = `
-        <h1>YAY!!! 🎉</h1>
-        <img src="https://media.giphy.com/media/111ebonMs90YLu/giphy.gif">
+        <h1>YAY!!! 💖🦔💖</h1>
+        <img src="https://media.giphy.com/media/UlFMuMlD4V3z6v36YC/giphy.gif" style="width:300px;">
       `;
     }
 
     function nope() {
-     function nope() {
-  const btn = document.getElementById("noBtn");
-  btn.style.position = "absolute";
-  btn.style.left = Math.random() * 80 + "%";
-  btn.style.top = Math.random() * 80 + "%";
-}
-
+      const btn = document.getElementById("noBtn");
+      btn.style.position = "absolute";
+      btn.style.left = Math.random() * 80 + "%";
+      btn.style.top = Math.random() * 80 + "%";
     }
   </script>
 
